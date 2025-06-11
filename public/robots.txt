@@ -1,14 +1,19 @@
-User-agent: *
-Allow: /
-
-# Disallow utility pages
-Disallow: /payment
-Disallow: /apply
-
-# Regional alternates
-Allow: /us/
-Allow: /uk/
-Allow: /ca/
-
-# Sitemap
-Sitemap: https://uplift-technologies.com/sitemap.xml
+diff --git a//dev/null b/uplifttech/public/robots.txt
+index 0000000000000000000000000000000000000000..b0cbcd7f2dfb915e221e690e12830772713c6c13 100644
+--- a//dev/null
++++ b/uplifttech/public/robots.txt
+@@ -0,0 +1,14 @@
++User-agent: *
++Allow: /
++
++# Disallow utility pages
++Disallow: /payment
++Disallow: /apply
++
++# Regional alternates
++Allow: /us/
++Allow: /uk/
++Allow: /ca/
++
++# Sitemap
++Sitemap: https://uplift-technologies.com/sitemap.xml
