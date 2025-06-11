@@ -1,79 +1,84 @@
-import React, { Suspense, lazy } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Layout from './components/layout/Layout';
-import LoadingSpinner from './components/ui/LoadingSpinner';
-import SitemapGenerator from './components/seo/SitemapGenerator';
-
-// Eager load HomePage for fastest initial render
-import HomePage from './pages/HomePage';
-
-// Lazy load all other pages
-const AboutPage = lazy(() => import('./pages/AboutPage'));
-const ServicesPage = lazy(() => import('./pages/ServicesPage'));
-const CaseStudiesPage = lazy(() => import('./pages/CaseStudiesPage'));
-const CareersPage = lazy(() => import('./pages/CareersPage'));
-const ContactPage = lazy(() => import('./pages/ContactPage'));
-const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
-const PaymentPage = lazy(() => import('./pages/PaymentPage'));
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
-const ApplyPage = lazy(() => import('./pages/ApplyPage'));
-
-function App() {
-  return (
-    <>
-      <SitemapGenerator />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <AboutPage />
-            </Suspense>
-          } />
-          <Route path="services" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ServicesPage />
-            </Suspense>
-          } />
-          <Route path="services/:service" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ServiceDetailPage />
-            </Suspense>
-          } />
-          <Route path="case-studies" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <CaseStudiesPage />
-            </Suspense>
-          } />
-          <Route path="careers" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <CareersPage />
-            </Suspense>
-          } />
-          <Route path="apply" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ApplyPage />
-            </Suspense>
-          } />
-          <Route path="contact" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ContactPage />
-            </Suspense>
-          } />
-          <Route path="payment" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <PaymentPage />
-            </Suspense>
-          } />
-          <Route path="*" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <NotFoundPage />
-            </Suspense>
-          } />
-        </Route>
-      </Routes>
-    </>
-  );
-}
-
-export default App;
+diff --git a//dev/null b/uplifttech/src/App.tsx
+index 0000000000000000000000000000000000000000..51dfd353ab24b74cab4bb2ef065fca1e00dd0637 100644
+--- a//dev/null
++++ b/uplifttech/src/App.tsx
+@@ -0,0 +1,79 @@
++import React, { Suspense, lazy } from 'react';
++import { Routes, Route } from 'react-router-dom';
++import Layout from './components/layout/Layout';
++import LoadingSpinner from './components/ui/LoadingSpinner';
++import SitemapGenerator from './components/seo/SitemapGenerator';
++
++// Eager load HomePage for fastest initial render
++import HomePage from './pages/HomePage';
++
++// Lazy load all other pages
++const AboutPage = lazy(() => import('./pages/AboutPage'));
++const ServicesPage = lazy(() => import('./pages/ServicesPage'));
++const CaseStudiesPage = lazy(() => import('./pages/CaseStudiesPage'));
++const CareersPage = lazy(() => import('./pages/CareersPage'));
++const ContactPage = lazy(() => import('./pages/ContactPage'));
++const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
++const PaymentPage = lazy(() => import('./pages/PaymentPage'));
++const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
++const ApplyPage = lazy(() => import('./pages/ApplyPage'));
++
++function App() {
++  return (
++    <>
++      <SitemapGenerator />
++      <Routes>
++        <Route path="/" element={<Layout />}>
++          <Route index element={<HomePage />} />
++          <Route path="about" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <AboutPage />
++            </Suspense>
++          } />
++          <Route path="services" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <ServicesPage />
++            </Suspense>
++          } />
++          <Route path="services/:service" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <ServiceDetailPage />
++            </Suspense>
++          } />
++          <Route path="case-studies" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <CaseStudiesPage />
++            </Suspense>
++          } />
++          <Route path="careers" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <CareersPage />
++            </Suspense>
++          } />
++          <Route path="apply" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <ApplyPage />
++            </Suspense>
++          } />
++          <Route path="contact" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <ContactPage />
++            </Suspense>
++          } />
++          <Route path="payment" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <PaymentPage />
++            </Suspense>
++          } />
++          <Route path="*" element={
++            <Suspense fallback={<LoadingSpinner />}>
++              <NotFoundPage />
++            </Suspense>
++          } />
++        </Route>
++      </Routes>
++    </>
++  );
++}
++
++export default App;
