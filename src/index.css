@@ -65,7 +65,9 @@
   }
 
   .gradient-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-electric-violet to-deep-purple;
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(to right, #c44fff, #6e17ff);
+    text-shadow: 0 0 20px rgba(155, 29, 255, 0.5);
   }
 
   .glass-card {
