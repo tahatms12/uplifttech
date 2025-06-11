@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
         alt="Uplift Technologies Logo" 
         width={667}
         height={196}
-        className="h-49 w-[167px]"
+        className="h-10 w-auto"
         loading="eager"
         fetchpriority="high"
       />
