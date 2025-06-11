@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Calendar } from 'lucide-react';
 import Button from '../ui/Button';
 
 const Hero: React.FC = () => {
@@ -72,7 +72,8 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
             >
-              <Button to="/contact" size="lg" className="group">
+              <Button to="/book" size="lg" className="group">
+                <Calendar size={18} className="mr-2" />
                 Schedule Free Consultation
                 <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '../ui/Logo';
 
@@ -134,7 +134,8 @@ const Navbar: React.FC = () => {
                 </div>
               ))}
               
-              <Link to="/contact" className="btn btn-primary">
+              <Link to="/book" className="btn btn-primary flex items-center">
+                <Calendar size={18} className="mr-2" />
                 Book a Meeting
               </Link>
             </div>
@@ -223,10 +224,11 @@ const Navbar: React.FC = () => {
               
               <div className="mt-auto mb-8">
                 <Link 
-                  to="/contact" 
-                  className="w-full btn btn-primary"
+                  to="/book" 
+                  className="w-full btn btn-primary flex items-center justify-center"
                   onClick={closeMenu}
                 >
+                  <Calendar size={18} className="mr-2" />
                   Book a Meeting
                 </Link>
               </div>

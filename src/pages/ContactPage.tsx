@@ -2,12 +2,28 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, Linkedin } from 'lucide-react';
 import Section from '../components/ui/Section';
-import { CalendarEmbed } from '../components/calendar/CalendarEmbed';
+import CalEmbed from '../components/calendar/CalEmbed';
 import '../styles/zoho-form.css';
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
     document.title = 'Contact Us | UPLIFT Technologies';
+    
+    // Load Cal.com script
+    const script = document.createElement('script');
+    script.src = 'https://app.cal.com/embed/embed.js';
+    script.async = true;
+    script.onload = () => {
+      if (window.Cal) {
+        window.Cal("init", "30min", { origin: "https://cal.com" });
+      }
+    };
+    document.head.appendChild(script);
+    
+    return () => {
+      // Clean up script if component unmounts
+      document.head.removeChild(script);
+    };
   }, []);
   
   return (
@@ -43,7 +59,11 @@ const ContactPage: React.FC = () => {
         </div>
         
         <div className="glass-card p-8">
-          <CalendarEmbed type="discovery" />
+          <CalEmbed 
+            elementId="booking-calendar" 
+            calLink="uplift-tech/30min"
+            layout="week_view"
+          />
         </div>
       </Section>
       

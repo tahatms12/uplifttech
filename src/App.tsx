@@ -17,6 +17,7 @@ const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
 const PaymentPage = lazy(() => import('./pages/PaymentPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const ApplyPage = lazy(() => import('./pages/ApplyPage'));
+const CalendarPage = lazy(() => import('./components/calendar/CalendarPage'));
 
 function App() {
   return (
@@ -58,6 +59,11 @@ function App() {
           <Route path="contact" element={
             <Suspense fallback={<LoadingSpinner />}>
               <ContactPage />
+            </Suspense>
+          } />
+          <Route path="book" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <CalendarPage />
             </Suspense>
           } />
           <Route path="payment" element={
