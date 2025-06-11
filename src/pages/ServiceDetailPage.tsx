@@ -6,6 +6,7 @@ import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
 import CallToAction from '../components/home/CallToAction';
 import MetaTags from '../components/seo/MetaTags';
+import StructuredData from '../components/seo/StructuredData';
 
 interface ServiceDetail {
   title: string;
