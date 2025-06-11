@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                 className="min-h-[150px] w-full"
               >
                 <h1 className="font-display font-semibold">
-                  Expert Outsourcing Solutions for <span className="gradient-text">US, UK & Canadian</span> Businesses
+                  Expert Growth Solutions for <span className="gradient-text">North America and the United Kingdom</span>
                 </h1>
               </motion.div>
               
@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
           >
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 aspect-[1/1] w-full bg-[radial-gradient(ellipse_at_center,#9B1DFF_0%,#280059_60%,transparent_70%)] blur-[80px]" />
-              <div className="absolute -bottom-6 -right-6 bg-rich-black p-4 rounded-xl border border-neutral-800 z-20">
+              <div className="absolute -bottom-6 -right-6 bg-rich-black p-4 rounded-xl border border-neutral-800 z-20 mr-[60px]">
                 <p className="text-3xl font-display font-semibold text-electric-violet">24/7</p>
                 <p className="text-sm text-white/70">Global Operations</p>
               </div>
