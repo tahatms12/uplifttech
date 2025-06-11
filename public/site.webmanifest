@@ -1,24 +1,19 @@
-diff --git a//dev/null b/uplifttech/public/site.webmanifest
-index 0000000000000000000000000000000000000000..19022581fd718a971284fe734a6ced9a9f237c16 100644
---- a//dev/null
-+++ b/uplifttech/public/site.webmanifest
-@@ -0,0 +1,19 @@
-+{
-+  "name": "UPLIFT Technologies",
-+  "short_name": "UPLIFT",
-+  "icons": [
-+    {
-+      "src": "/android-chrome-192x192.png",
-+      "sizes": "192x192",
-+      "type": "image/png"
-+    },
-+    {
-+      "src": "/android-chrome-512x512.png",
-+      "sizes": "512x512",
-+      "type": "image/png"
-+    }
-+  ],
-+  "theme_color": "#0D0D0F",
-+  "background_color": "#0D0D0F",
-+  "display": "standalone"
-+}
+{
+  "name": "UPLIFT Technologies",
+  "short_name": "UPLIFT",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0D0D0F",
+  "background_color": "#0D0D0F",
+  "display": "standalone"
+}
