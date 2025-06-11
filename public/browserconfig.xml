@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-    <msapplication>
-        <tile>
-            <square150x150logo src="/mstile-150x150.png"/>
-            <TileColor>#9B1DFF</TileColor>
-        </tile>
-    </msapplication>
-</browserconfig>
+diff --git a//dev/null b/uplifttech/public/browserconfig.xml
+index 0000000000000000000000000000000000000000..3d0affd12c95f921c377f4b6367fe11a11e42ce8 100644
+--- a//dev/null
++++ b/uplifttech/public/browserconfig.xml
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<browserconfig>
++    <msapplication>
++        <tile>
++            <square150x150logo src="/mstile-150x150.png"/>
++            <TileColor>#9B1DFF</TileColor>
++        </tile>
++    </msapplication>
++</browserconfig>
