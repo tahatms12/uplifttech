@@ -4,7 +4,7 @@ const Logo: React.FC = () => {
   return (
     <div className="flex items-center justify-center">
       <img 
-        src="https://24vzlu2kzs.ufs.sh/f/4JlBnp1v6U48yI3pZSh5Jv7ormPLVldGMtnpXT9sKcCk0RUO" 
+        src="/img/logo.svg" 
         alt="Uplift Technologies Logo" 
         width={160}
         height={40}
