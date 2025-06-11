@@ -6,9 +6,9 @@ const Logo: React.FC = () => {
       <img 
         src="https://24vzlu2kzs.ufs.sh/f/4JlBnp1v6U48S8sVkrTs0v8bxAn6gqLm4y5oP7kC9HFw2pRh" 
         alt="Uplift Technologies Logo" 
-        width={160}
-        height={40}
-        className="h-10 w-40"
+        width={667}
+        height={196}
+        className="h-49 w-[167px]"
         loading="eager"
         fetchpriority="high"
       />
