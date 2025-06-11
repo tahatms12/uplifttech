@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-rich-black pointer-events-none" />
       
       <div className="container-custom relative z-10">
-        <div className="flex flex-col lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center px-[15px]">
           <div className="lg:w-3/5 mb-10 lg:mb-0">
             <motion.div
               initial="hidden"
