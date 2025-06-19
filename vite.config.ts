@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import viteCompression from 'vite-plugin-compression';
 import { visualizer } from 'rollup-plugin-visualizer';
-import critical from 'vite-plugin-critical';
 
 export default defineConfig({
   plugins: [
@@ -36,15 +35,6 @@ export default defineConfig({
             type: 'image/png'
           }
         ]
-      }
-    }),
-    critical({
-      inline: true,
-      criticalUrl: '/',
-      width: 375,
-      height: 667,
-      penthouse: {
-        blockJSRequests: false,
       }
     }),
     viteCompression({
