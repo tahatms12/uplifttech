@@ -229,6 +229,7 @@ const PrivacyPolicyPage: React.FC = () => {
         </div>
       </Section>
     </>
+  )
   );
 };
 
