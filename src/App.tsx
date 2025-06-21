@@ -18,6 +18,7 @@ const PaymentPage = lazy(() => import('./pages/PaymentPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const ApplyPage = lazy(() => import('./pages/ApplyPage'));
 const CalendarPage = lazy(() => import('./components/calendar/CalendarPage'));
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 
 function App() {
   return (
@@ -69,6 +70,11 @@ function App() {
           <Route path="payment" element={
             <Suspense fallback={<LoadingSpinner />}>
               <PaymentPage />
+            </Suspense>
+          } />
+          <Route path="privacy-policy" element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PrivacyPolicyPage />
             </Suspense>
           } />
           <Route path="*" element={
