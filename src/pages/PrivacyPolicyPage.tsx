@@ -178,8 +178,8 @@ const PrivacyPolicyPage: React.FC = () => {
             <h3 className="text-xl font-medium mt-8 mb-4">7. Breach Notification</h3>
             <ul className="list-disc pl-6 space-y-2">
               <li>Discovery triggers internal incident response within 24 h.</li>
-              <li>Notification to affected individuals and HHS within 60 days (≤ 500) or without unreasonable delay (> 500).</li>
-              <li>Annual breach log of incidents < 500 individuals submitted to HHS.</li>
+              <li>Notification to affected individuals and HHS within 60 days (≤ 500) or without unreasonable delay ({'>'} 500).</li>
+              <li>Annual breach log of incidents {'<'} 500 individuals submitted to HHS.</li>
             </ul>
             
             <h3 className="text-xl font-medium mt-8 mb-4">8. Documentation & Review</h3>
@@ -229,7 +229,6 @@ const PrivacyPolicyPage: React.FC = () => {
         </div>
       </Section>
     </>
-  )
   );
 };
 
