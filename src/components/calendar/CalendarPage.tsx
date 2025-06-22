@@ -6,19 +6,6 @@ import CalEmbed from './CalEmbed';
 const CalendarPage: React.FC = () => {
   useEffect(() => {
     document.title = 'Book a Meeting | UPLIFT Technologies';
-    
-    // Load Cal.com script
-    const script = document.createElement('script');
-    script.src = 'https://app.cal.com/embed/embed.js';
-    script.async = true;
-    document.head.appendChild(script);
-    
-    return () => {
-      // Clean up script if component unmounts
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
-      }
-    };
   }, []);
   
   return (

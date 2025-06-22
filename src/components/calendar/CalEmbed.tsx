@@ -26,36 +26,44 @@ const CalEmbed: React.FC<CalEmbedProps> = ({
   style = {}
 }) => {
   useEffect(() => {
-    // Initialize Cal if it's loaded
-    if (window.Cal) {
-      // If Cal is already initialized with our namespace, use it directly
-      if (window.Cal.ns && window.Cal.ns[namespace]) {
-        window.Cal.ns[namespace]("inline", {
-          elementOrSelector: `#${elementId}`,
-          calLink: calLink,
-          config: { layout }
-        });
-
-        window.Cal.ns[namespace]("ui", {
-          hideEventTypeDetails: hideEventTypeDetails,
-          layout: layout
-        });
-      } else {
-        // Initialize namespace if it doesn't exist
-        window.Cal("init", namespace, { origin: "https://cal.com" });
-        
-        window.Cal.ns[namespace]("inline", {
-          elementOrSelector: `#${elementId}`,
-          calLink: calLink,
-          config: { layout }
-        });
-
-        window.Cal.ns[namespace]("ui", {
-          hideEventTypeDetails: hideEventTypeDetails,
-          layout: layout
-        });
+    // Make sure Cal.com script is loaded
+    const loadCalScript = () => {
+      if (!document.querySelector('script[src="https://app.cal.com/embed/embed.js"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://app.cal.com/embed/embed.js';
+        script.async = true;
+        script.onload = initializeCalendar;
+        document.head.appendChild(script);
+      } else if (window.Cal) {
+        initializeCalendar();
       }
-    }
+    };
+
+    // Initialize the calendar
+    const initializeCalendar = () => {
+      if (!window.Cal) return;
+      
+      // Initialize namespace if needed
+      if (!window.Cal.ns || !window.Cal.ns[namespace]) {
+        window.Cal("init", namespace, { origin: "https://cal.com" });
+      }
+      
+      // Configure inline calendar
+      window.Cal.ns[namespace]("inline", {
+        elementOrSelector: `#${elementId}`,
+        calLink: calLink,
+        config: { layout }
+      });
+
+      // Configure UI options
+      window.Cal.ns[namespace]("ui", {
+        hideEventTypeDetails: hideEventTypeDetails,
+        layout: layout
+      });
+    };
+
+    // Load script and initialize
+    loadCalScript();
     
     // Cleanup function
     return () => {

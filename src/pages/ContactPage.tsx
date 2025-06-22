@@ -8,22 +8,6 @@ import '../styles/zoho-form.css';
 const ContactPage: React.FC = () => {
   useEffect(() => {
     document.title = 'Contact Us | UPLIFT Technologies';
-    
-    // Load Cal.com script
-    const script = document.createElement('script');
-    script.src = 'https://app.cal.com/embed/embed.js';
-    script.async = true;
-    script.onload = () => {
-      if (window.Cal) {
-        window.Cal("init", "30min", { origin: "https://cal.com" });
-      }
-    };
-    document.head.appendChild(script);
-    
-    return () => {
-      // Clean up script if component unmounts
-      document.head.removeChild(script);
-    };
   }, []);
   
   return (
