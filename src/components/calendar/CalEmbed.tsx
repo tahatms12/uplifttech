@@ -26,9 +26,9 @@ const CalEmbed: React.FC<CalEmbedProps> = ({
   style = {}
 }) => {
   useEffect(() => {
-    // Initialize Cal if it's not already loaded
+    // Initialize Cal if it's loaded
     if (window.Cal) {
-      // If Cal is already initialized, use it directly
+      // If Cal is already initialized with our namespace, use it directly
       if (window.Cal.ns && window.Cal.ns[namespace]) {
         window.Cal.ns[namespace]("inline", {
           elementOrSelector: `#${elementId}`,
