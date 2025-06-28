@@ -12,7 +12,10 @@ interface CalEmbedProps {
 
 declare global {
   interface Window {
-    Cal?: any;
+    Cal?: {
+      (action: string, ...args: any[]): void;
+      ns?: Record<string, (action: string, ...args: any[]) => void>;
+    };
   }
 }
 
@@ -32,9 +35,16 @@ const CalEmbed: React.FC<CalEmbedProps> = ({
         const script = document.createElement('script');
         script.src = 'https://app.cal.com/embed/embed.js';
         script.async = true;
-        script.onload = initializeCalendar;
         document.head.appendChild(script);
+        
+        // Initialize when loaded
+        script.onload = () => {
+          if (window.Cal) {
+            initializeCalendar();
+          }
+        };
       } else if (window.Cal) {
+        // Script already loaded
         initializeCalendar();
       }
     };
@@ -43,32 +53,35 @@ const CalEmbed: React.FC<CalEmbedProps> = ({
     const initializeCalendar = () => {
       if (!window.Cal) return;
       
-      // Initialize namespace if needed
+      // Initialize Cal.com with namespace if needed
       if (!window.Cal.ns || !window.Cal.ns[namespace]) {
-        window.Cal("init", namespace, { origin: "https://cal.com" });
+        window.Cal('init', namespace, { origin: "https://cal.com" });
       }
-      
-      // Configure inline calendar
-      window.Cal.ns[namespace]("inline", {
-        elementOrSelector: `#${elementId}`,
-        calLink: calLink,
-        config: { layout }
-      });
 
-      // Configure UI options
-      window.Cal.ns[namespace]("ui", {
-        hideEventTypeDetails: hideEventTypeDetails,
-        layout: layout
-      });
+      // Configure inline calendar
+      setTimeout(() => {
+        if (window.Cal.ns && window.Cal.ns[namespace]) {
+          window.Cal.ns[namespace]('inline', {
+            elementOrSelector: `#${elementId}`,
+            calLink: calLink,
+            config: { layout }
+          });
+          
+          window.Cal.ns[namespace]('ui', {
+            hideEventTypeDetails: hideEventTypeDetails,
+            layout: layout
+          });
+        }
+      }, 100); // Small delay to ensure Cal.com is ready
     };
 
-    // Load script and initialize
+    // Initial load
     loadCalScript();
     
-    // Cleanup function
+    // Cleanup
     return () => {
-      // Cal doesn't provide a direct way to clean up, but we could
-      // potentially remove the element content if needed
+      // Cal.com doesn't provide a direct cleanup method
+      // The element's contents will be removed when component unmounts
     };
   }, [elementId, calLink, namespace, layout, hideEventTypeDetails]);
 
