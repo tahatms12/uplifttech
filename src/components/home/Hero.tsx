@@ -34,6 +34,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center px-[15px]">
           <div className="lg:w-3/5 mb-10 lg:mb-0">
             <motion.div
+                className="mb-4 sm:mb-0"
                 initial="hidden"
                 animate="visible"
                 variants={{
@@ -68,7 +69,7 @@ const Hero: React.FC = () => {
             </motion.div>
             
             <motion.div 
-              className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4"
+              className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-0"
               variants={fadeUpVariants}
               initial="hidden"
               animate="visible"
@@ -92,7 +93,8 @@ const Hero: React.FC = () => {
           >
             <div className="relative w-full max-w-xs sm:max-w-md mx-auto">
               <div className="absolute inset-0 aspect-[1/1] w-full bg-[radial-gradient(ellipse_at_center,#9B1DFF_0%,#280059_60%,transparent_70%)] blur-[80px]" />
-              <div className="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 bg-rich-black p-3 sm:p-4 rounded-xl border border-neutral-800 z-20 mr-[30px] sm:mr-[60px]">
+              {/* Adjust positioning to prevent overlap on mobile */}
+              <div className="absolute -bottom-16 sm:-bottom-6 right-0 sm:-right-6 bg-rich-black p-3 sm:p-4 rounded-xl border border-neutral-800 z-20">
                 <p className="text-2xl sm:text-3xl font-display font-semibold text-electric-violet">24/7</p>
                 <p className="text-xs sm:text-sm text-white/70">Global Operations</p>
               </div>
