@@ -45,7 +45,7 @@ const CaseStudiesPage: React.FC = () => {
         "Comprehensive documentation allowing for knowledge transfer",
         "Reduced bug rate by 67% through formalized QA"
       ],
-      imageSrc: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr1nZS9eKKpXVWvs9SzonqPt04iFJaeUgRD85u",
       testimonial: {
         quote: "UPLIFT transformed our development process from chaotic to structured. Their team didn't just write code—they implemented systems that fundamentally changed how we approach software development.",
         author: "Thomas Wright",
@@ -66,7 +66,7 @@ const CaseStudiesPage: React.FC = () => {
         "Established ongoing collection protocols reducing future AR aging",
         "Maintained positive patient relationships through professional communication"
       ],
-      imageSrc: "https://images.pexels.com/photos/5650026/pexels-photo-5650026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrGaIbJrUXE8YTvI5L6NyoCA41xG0KlrumqD3P",
       testimonial: {
         quote: "The AR recovery results were immediate and impressive. UPLIFT's team approached collections with the perfect balance of persistence and professionalism. They recovered funds we had almost written off completely.",
         author: "Michelle Rivera",
@@ -87,7 +87,7 @@ const CaseStudiesPage: React.FC = () => {
         "Full schedule utilization, maximizing provider productivity",
         "Improved patient satisfaction scores by 38%"
       ],
-      imageSrc: "https://images.pexels.com/photos/8867482/pexels-photo-8867482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrgCOWBl9pUNhrWouxqs4lZ1DIam2i9Jv0zHyt"
     },
     {
       id: 4,
@@ -102,7 +102,7 @@ const CaseStudiesPage: React.FC = () => {
         "73% of routine scheduling handled automatically",
         "50% reduction in staff time spent on repetitive communication tasks"
       ],
-      imageSrc: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrYamlY1VvGagiQPkZIS78eT2lbXDK1sjz5c3t",
       testimonial: {
         quote: "The AI integration UPLIFT implemented has been transformative. Our customers receive immediate responses at any hour, and our team can focus on complex interactions that truly require the human touch.",
         author: "James Chen",
@@ -123,7 +123,7 @@ const CaseStudiesPage: React.FC = () => {
         "35% higher conversion rate than previous internal efforts",
         "Successful entry into 3 new vertical markets"
       ],
-      imageSrc: "https://images.pexels.com/photos/6476260/pexels-photo-6476260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr8Hyh7FSpA1R97OPT6CrtFKfNDeZcxaImnYuB"
     },
     {
       id: 6,
@@ -138,7 +138,7 @@ const CaseStudiesPage: React.FC = () => {
         "On-time delivery improved from 79% to 97%",
         "Order processing time reduced by 40%"
       ],
-      imageSrc: "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr29eCfrOIXq0JBeTNSsrEFDjm8bYxAHK13tzV"
     },
     {
       id: 7,
@@ -153,7 +153,7 @@ const CaseStudiesPage: React.FC = () => {
         "Marketing campaign engagement up 83%",
         "Successfully entered 2 new market segments"
       ],
-      imageSrc: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg",
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrOwsfWsPtf5tLxrJBKGIUXpzSWP3AO9Qwhg1N",
       testimonial: {
         quote: "The creative direction and brand strategy provided by Uplift Technologies transformed how our market perceives us. We've seen immediate impact in both lead quality and customer engagement.",
         author: "Sarah Chen",
@@ -174,7 +174,7 @@ const CaseStudiesPage: React.FC = () => {
         "43% reduction in customer acquisition cost",
         "12 major industry awards won"
       ],
-      imageSrc: "https://images.pexels.com/photos/7688460/pexels-photo-7688460.jpeg",
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrrIXNSKFdfMxj3N4Ltv1KoiqPgbEIWwUAFmSh",
       testimonial: {
         quote: "The marketing and creative team at Uplift Technologies delivered beyond our expectations. Their integrated approach not only increased our leads but also established us as a thought leader in our space.",
         author: "Michael Roberts",
