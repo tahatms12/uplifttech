@@ -65,7 +65,7 @@ const CaseStudies: React.FC = () => {
         { label: "Brand Recognition", value: "+65%" },
         { label: "Lead Generation", value: "+48%" }
       ],
-      imageUrl: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrkJOdoTf7QUG3gos5DHvRIOeTxSVCiYqEJwZA"
+      imageUrl: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr29eCfrOIXq0JBeTNSsrEFDjm8bYxAHK13tzV"
     },
     {
       title: "Accounts Receivable Recovery",
