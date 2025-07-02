@@ -225,7 +225,7 @@ const ServiceDetailPage: React.FC = () => {
           description: 'Continuous performance monitoring and campaign refinement to maximize results.'
         }
       ],
-      imageSrc: 'https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imageSrc: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhriqLUaVAGx5GHot7PpSj1Nqiscbey38YkwXh2'
     },
     'front-desk': {
       title: 'Front Desk',
@@ -276,7 +276,7 @@ const ServiceDetailPage: React.FC = () => {
           description: 'Regular reviews and adjustments to ensure service delivery meets your evolving needs.'
         }
       ],
-      imageSrc: 'https://images.pexels.com/photos/1181605/pexels-photo-1181605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imageSrc: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrffylYS3u4vE1XnCFZWHLb5YdoJeqV2ijy6fI'
     }
   };
   
