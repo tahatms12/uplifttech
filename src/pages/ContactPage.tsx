@@ -178,7 +178,7 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
           <img 
-            src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+            src="https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrWX2rELwIaUN5ZeFJCVGqXkKD9szcLwxHtEbg" 
             alt="Global team collaboration" 
             className="w-full h-full object-cover"
           />
