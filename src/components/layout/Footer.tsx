@@ -48,6 +48,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               {[
                 { name: 'About Us', path: '/about' },
+                { name: 'Visual Identity', path: '/creative-direction' },
                 { name: 'Case Studies', path: '/case-studies' },
                 { name: 'Careers', path: '/careers' },
                 { name: 'Contact', path: '/contact' },
