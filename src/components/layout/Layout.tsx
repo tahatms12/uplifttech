@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { motion, AnimatePresence } from 'framer-motion';
