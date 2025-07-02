@@ -60,11 +60,11 @@ const Navbar: React.FC = () => {
     <>
       <header 
         className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled || isMenuOpen ? 'bg-rich-black/95 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-5'
+          isScrolled || isMenuOpen ? 'bg-rich-black/95 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-3 sm:py-5'
         }`}
       >
-        <div className="container-custom">
-          <nav className="grid grid-cols-[1fr_auto_1fr] items-center gap-8">
+        <div className="container-custom px-3 sm:px-4">
+          <nav className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-8">
             {/* Mobile Menu Button (Left) */}
             <div className="lg:hidden">
               <button 
@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
               <div className="flex flex-col space-y-6 mt-8">
                 {navLinks.map((link) => (
                   <div key={link.name}>
-                    {link.hasDropdown ? (
+                    {link.hasDropdown && !link.name.includes("Creative") ? (
                       <>
                         <button 
                           className="flex items-center text-xl font-medium py-2"
@@ -224,14 +224,16 @@ const Navbar: React.FC = () => {
               </div>
               
               <div className="mt-auto mb-8">
-                <Link 
-                  to="/book" 
-                  className="w-full btn btn-primary flex items-center justify-center"
-                  onClick={closeMenu}
-                >
-                  <Calendar size={18} className="mr-2" />
-                  Book a Meeting
-                </Link>
+                <div className="mb-3 sm:mb-5">
+                  <Link 
+                    to="/book" 
+                    className="w-full btn btn-primary flex items-center justify-center text-base"
+                    onClick={closeMenu}
+                  >
+                    <Calendar size={18} className="mr-2" />
+                    Book a Meeting
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </>

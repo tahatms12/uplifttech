@@ -35,16 +35,16 @@ const CreativeDirectionPage: React.FC<CreativeDirectionPageProps> = () => {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-electric-violet/20 rounded-full filter blur-[100px] animate-glow"></div>
       
       <motion.div 
-        className="glass-card p-8 md:p-12 text-center max-w-xl relative z-10"
+        className="glass-card p-6 md:p-12 text-center max-w-md mx-4 relative z-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl font-semibold mb-4">
+        <h1 className="text-2xl md:text-3xl font-semibold mb-4">
           <span className="gradient-text">Creative Direction</span>
         </h1>
         
-        <p className="text-xl text-white/80 mb-8">
+        <p className="text-lg md:text-xl text-white/80 mb-8">
           Our Creative Direction portfolio showcases our brand strategy and design work. 
           It's available on a separate specialized website.
         </p>
@@ -53,7 +53,7 @@ const CreativeDirectionPage: React.FC<CreativeDirectionPageProps> = () => {
           <Button 
             variant="primary"
             size="lg"
-            className="group"
+            className="group w-full sm:w-auto"
             onClick={handleRedirect}
           >
             <ExternalLink size={18} className="mr-2" />
@@ -61,10 +61,11 @@ const CreativeDirectionPage: React.FC<CreativeDirectionPageProps> = () => {
             <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
           
-          <Link to="/case-studies">
+          <Link to="/case-studies" className="w-full sm:w-auto">
             <Button
               variant="outline"
               size="lg"
+              className="w-full"
             >
               View Case Studies
             </Button>
@@ -74,7 +75,7 @@ const CreativeDirectionPage: React.FC<CreativeDirectionPageProps> = () => {
         <p className="mt-6 text-sm text-white/60">
           Note: Clicking "View Portfolio" will take you to our external portfolio site at shnwzrf.com
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

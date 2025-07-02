@@ -39,12 +39,14 @@ export default {
       fontFamily: {
         'display': ['Orbitron', 'sans-serif'],
         'body': ['Inter', 'system-ui', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'glow': 'pulse 3s ease-in-out infinite',
       },
       boxShadow: {
         'neon': '0 0 20px rgba(155, 29, 255, 0.3)',
@@ -85,9 +87,10 @@ export default {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/typography')
   ],
   future: {
     hoverOnlyWhenSupported: true,
+    respectDefaultRingColorOpacity: true,
   }
 };

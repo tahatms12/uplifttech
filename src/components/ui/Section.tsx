@@ -35,8 +35,8 @@ const Section: React.FC<SectionProps> = ({
   };
 
   return (
-    <section id={id} className={`py-16 md:py-24 ${className}`}>
-      <div className={`container-custom ${maxWidth} mx-auto`}>
+    <section id={id} className={`py-12 sm:py-16 md:py-20 lg:py-24 ${className}`}>
+      <div className={`container-custom ${maxWidth} mx-auto px-4 sm:px-6`}>
         {(title || subtitle) && (
           <motion.div
             initial="hidden"
@@ -52,12 +52,12 @@ const Section: React.FC<SectionProps> = ({
                 }
               }
             }}
-            className={`mb-12 ${centered ? 'text-center mx-auto' : ''} ${centered ? 'max-w-3xl' : ''}`}
+            className={`mb-8 sm:mb-12 ${centered ? 'text-center mx-auto' : ''} ${centered ? 'max-w-xl sm:max-w-2xl md:max-w-3xl' : ''}`}
           >
             {title && (
               <motion.h2
                 variants={fadeUpVariants}
-                className="gradient-text mb-4"
+                className="gradient-text mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl"
               >
                 {title}
               </motion.h2>
@@ -65,7 +65,7 @@ const Section: React.FC<SectionProps> = ({
             {subtitle && (
               <motion.p
                 variants={fadeUpVariants}
-                className="text-xl text-white/80"
+                className="text-base sm:text-lg md:text-xl text-white/80"
               >
                 {subtitle}
               </motion.p>

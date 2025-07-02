@@ -23,33 +23,35 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
   delay,
 }) => {
   return (
-    <Card className="overflow-hidden p-0" delay={delay}>
-      <div className="relative h-48 overflow-hidden">
+    <Card className="overflow-hidden p-0 flex flex-col h-full" delay={delay}>
+      <div className="relative h-40 sm:h-48 overflow-hidden">
         <img
           src={imageUrl}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
         />
-        <div className="absolute top-4 left-4 bg-electric-violet/90 text-white text-xs font-medium px-3 py-1 rounded-full">
+        <div className="absolute top-2 sm:top-4 left-2 sm:left-4 bg-electric-violet/90 text-white text-xs font-medium px-2 py-1 sm:px-3 sm:py-1 rounded-full">
           {category}
         </div>
       </div>
-      <div className="p-6">
+      <div className="p-4 sm:p-6 flex-grow flex flex-col">
         <h3 className="text-xl font-medium mb-3">{title}</h3>
         <p className="text-white/70 mb-6">{description}</p>
         
-        <div className="grid grid-cols-2 gap-4 mb-6">
+        <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6">
           {stats.map((stat, index) => (
             <div key={index}>
-              <p className="text-xl font-medium text-electric-violet">{stat.value}</p>
+              <p className="text-lg sm:text-xl font-medium text-electric-violet">{stat.value}</p>
               <p className="text-sm text-white/60">{stat.label}</p>
             </div>
           ))}
         </div>
         
-        <Button to="/case-studies" variant="outline" className="w-full">
+        <div className="mt-auto">
+          <Button to="/case-studies" variant="outline" className="w-full">
           View Case Study
-        </Button>
+          </Button>
+        </div>
       </div>
     </Card>
   );
@@ -92,11 +94,11 @@ const CaseStudies: React.FC = () => {
   return (
     <Section
       title="Case Studies"
-      subtitle="Real results for real businesses. See how our services have transformed operations and driven growth across industries."
+      subtitle="Real results for real businesses. See how our services have transformed operations and driven growth."
       centered
       className="bg-deep-purple/5"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         {caseStudies.map((study, index) => (
           <CaseStudyCard
             key={study.title}
@@ -117,7 +119,7 @@ const CaseStudies: React.FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <Button to="/case-studies" size="lg" className="group">
+        <Button to="/case-studies" size="lg" className="group w-full sm:w-auto">
           View All Case Studies
           <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
         </Button>

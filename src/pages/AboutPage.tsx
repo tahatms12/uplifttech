@@ -57,7 +57,7 @@ const AboutPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <div className="pt-32 pb-20 relative overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: `url('https://24vzlu2kzs.ufs.sh/f/4JlBnp1v6U48LYcCDZiUMZzX7lfxvW3hEk5JKuRtbm1dNVHP')`,
@@ -67,17 +67,17 @@ const AboutPage: React.FC = () => {
           }}
         />
         
-        <div className="container-custom relative z-10">
+        <div className="container-custom relative z-10 px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl"
+            className="max-w-xl md:max-w-2xl lg:max-w-3xl"
           >
-            <h1 className="font-poppins font-semibold mb-6">
-              About <span className="gradient-text">UPLIFT</span> Technologies
+            <h1 className="font-poppins font-semibold mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl">
+              About <span className="gradient-text block sm:inline">UPLIFT</span> Technologies
             </h1>
-            <p className="text-xl text-white/80">
+            <p className="text-base sm:text-lg md:text-xl text-white/80">
               We are a people-powered outsourcing partner built for 24/7 operations, combining expert talent with cutting-edge technology to deliver exceptional results.
             </p>
           </motion.div>
@@ -141,12 +141,12 @@ const AboutPage: React.FC = () => {
       
       {/* Team Section */}
       <Section
-        title="Our Leadership Team"
-        subtitle="Meet the experts who drive our vision forward and ensure exceptional service delivery."
+        title="Our Team"
+        subtitle="Meet the experts who drive our vision forward."
         centered
         maxWidth="max-w-5xl"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 justify-items-center px-2">
           {team.map((member, index) => (
             <motion.div 
               key={index}
@@ -156,16 +156,16 @@ const AboutPage: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center flex flex-col items-center max-w-sm"
             >
-              <div className="w-56 h-56 rounded-full overflow-hidden mx-auto mb-8 relative shadow-[0_0_20px_rgba(155,29,255,0.3)]">
+              <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 rounded-full overflow-hidden mx-auto mb-4 sm:mb-6 md:mb-8 relative shadow-[0_0_20px_rgba(155,29,255,0.3)]">
                 <img 
                   src={member.image}
                   alt={member.name} 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-medium mb-2">{member.name}</h3>
-              <p className="text-electric-violet mb-4 text-lg">{member.position}</p>
-              <p className="text-white/70 max-w-xs mx-auto">
+              <h3 className="text-xl sm:text-2xl font-medium mb-1 sm:mb-2">{member.name}</h3>
+              <p className="text-electric-violet mb-2 sm:mb-4 text-base sm:text-lg">{member.position}</p>
+              <p className="text-white/70 text-sm sm:text-base max-w-xs mx-auto">
                 {member.description}
               </p>
             </motion.div>

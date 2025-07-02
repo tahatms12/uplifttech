@@ -50,7 +50,7 @@ const Card: React.FC<CardProps> = memo(({
   return (
     <motion.div
       ref={ref}
-      className={`glass-card p-6 ${hoverEffect ? 'hover:border-electric-violet/50 transition-all duration-300' : ''} ${className}`}
+      className={`glass-card p-4 sm:p-6 ${hoverEffect ? 'hover:border-electric-violet/50 transition-all duration-300' : ''} ${className}`}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       whileHover="hover"

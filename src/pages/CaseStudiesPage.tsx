@@ -250,13 +250,13 @@ const CaseStudiesPage: React.FC = () => {
       
       {/* Filters */}
       <div className="py-8 border-b border-neutral-800">
-        <div className="container-custom">
-          <div className="flex flex-wrap gap-4 justify-center">
+        <div className="container-custom overflow-x-auto px-2">
+          <div className="flex flex-nowrap sm:flex-wrap gap-2 sm:gap-4 justify-start sm:justify-center min-w-full pb-2">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-4 py-2 rounded-full transition-all ${
+                className={`px-3 py-2 text-sm whitespace-nowrap rounded-full transition-all ${
                   activeFilter === category
                     ? 'bg-electric-violet text-white'
                     : 'bg-neutral-800/50 text-white/70 hover:bg-neutral-700'
@@ -270,8 +270,8 @@ const CaseStudiesPage: React.FC = () => {
       </div>
       
       {/* Case Studies Grid */}
-      <Section>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <Section className="px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
           {filteredCaseStudies.map((study, index) => (
             <motion.div
               key={study.id}

@@ -5,15 +5,15 @@ import Logo from '../ui/Logo';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-deep-purple/20 border-t border-neutral-800 pt-16 pb-8">
-      <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-deep-purple/20 border-t border-neutral-800 pt-12 sm:pt-16 pb-6 sm:pb-8">
+      <div className="container-custom px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           <div className="lg:col-span-1">
             <Logo />
-            <p className="mt-4 text-sm text-white/70 max-w-xs">
+            <p className="mt-3 sm:mt-4 text-sm text-white/70 max-w-xs">
               Your people-powered outsourcing partner built for 24/7 operations, driving efficiency and growth.
             </p>
-            <div className="mt-6 flex space-x-4">
+            <div className="mt-4 sm:mt-6 flex space-x-4">
               <a 
                 href="https://linkedin.com/company/uplift-technologies-intl" 
                 target="_blank" 
@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-medium mb-4">Services</h4>
-            <ul className="space-y-3">
+            <h4 className="text-base sm:text-lg font-medium mb-3 sm:mb-4">Services</h4>
+            <ul className="space-y-2 sm:space-y-3">
               {['Sales', 'Logistics', 'Collections', 'Marketing', 'Front Desk'].map((service) => (
                 <li key={service}>
                   <Link 
@@ -44,8 +44,8 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-medium mb-4">Company</h4>
-            <ul className="space-y-3">
+            <h4 className="text-base sm:text-lg font-medium mb-3 sm:mb-4">Company</h4>
+            <ul className="space-y-2 sm:space-y-3">
               {[
                 { name: 'About Us', path: '/about' },
                 { name: 'Creative Direction', path: '/creative-direction' },
@@ -67,8 +67,8 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-medium mb-4">Contact Us</h4>
-            <ul className="space-y-4">
+            <h4 className="text-base sm:text-lg font-medium mb-3 sm:mb-4">Contact Us</h4>
+            <ul className="space-y-3 sm:space-y-4">
               <li>
                 <a 
                   href="tel:8556435404" 
@@ -98,17 +98,17 @@ const Footer: React.FC = () => {
                 </div>
               </li>
             </ul>
-            <div className="mt-6">
-              <Link to="/contact" className="btn btn-primary">
+            <div className="mt-4 sm:mt-6">
+              <Link to="/contact" className="btn btn-primary w-full sm:w-auto">
                 Book a Meeting
               </Link>
             </div>
           </div>
         </div>
         
-        <div className="mt-16 pt-6 border-t border-neutral-800 text-sm text-white/50 flex flex-col md:flex-row justify-between items-center">
+        <div className="mt-10 sm:mt-12 md:mt-16 pt-4 sm:pt-6 border-t border-neutral-800 text-xs sm:text-sm text-white/50 flex flex-col sm:flex-row justify-between items-center">
           <p>© {new Date().getFullYear()} Uplift Technologies. All rights reserved.</p>
-          <div className="mt-4 md:mt-0 flex space-x-6">
+          <div className="mt-3 sm:mt-0 flex space-x-4 sm:space-x-6">
             <Link to="/privacy-policy" className="hover:text-white transition-colors duration-300">
               Privacy Policy
             </Link>

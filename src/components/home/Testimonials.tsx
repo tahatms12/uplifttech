@@ -45,7 +45,7 @@ const Testimonials: React.FC = () => {
   return (
     <Section className="bg-gradient-to-b from-deep-purple/10 to-rich-black">
       <motion.div 
-        className="max-w-4xl mx-auto text-center relative"
+        className="max-w-xl sm:max-w-2xl md:max-w-4xl mx-auto text-center relative px-4"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-2xl md:text-3xl font-poppins font-medium leading-relaxed mb-8 px-4">
+            <p className="text-xl sm:text-2xl md:text-3xl font-poppins font-medium leading-relaxed mb-6 sm:mb-8">
               "{testimonials[currentIndex].quote}"
             </p>
             
@@ -77,7 +77,7 @@ const Testimonials: React.FC = () => {
             </div>
           </motion.div>
           
-          <div className="flex justify-center gap-4 mt-10">
+          <div className="flex justify-center gap-3 sm:gap-4 mt-8 sm:mt-10">
             <button 
               onClick={prevTestimonial}
               className="p-2 rounded-full border border-neutral-700 hover:border-electric-violet hover:bg-deep-purple/20 transition-colors"
@@ -87,12 +87,12 @@ const Testimonials: React.FC = () => {
             </button>
             <div className="flex gap-2 items-center">
               {testimonials.map((_, index) => (
-                <button
+                <button 
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                  className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all ${
                     currentIndex === index 
-                      ? 'bg-electric-violet w-8' 
+                      ? 'bg-electric-violet w-6 sm:w-8' 
                       : 'bg-neutral-700 hover:bg-neutral-500'
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
