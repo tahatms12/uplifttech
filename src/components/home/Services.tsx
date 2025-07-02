@@ -75,7 +75,7 @@ const services = [
     icon: <Palette size={32} />,
     title: "Creative Services",
     description: "Expert brand development and creative direction tailored for North American and UK market presence.",
-    link: "/services/creative-direction",
+    link: "/creative-direction",
     linkText: "See Creative Direction & Design Services"
   },
   {
