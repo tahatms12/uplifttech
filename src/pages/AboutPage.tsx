@@ -103,13 +103,13 @@ const AboutPage: React.FC = () => {
           </motion.div>
           
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative aspect-video rounded-xl overflow-hidden">
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden max-w-md mx-auto">
               <img 
                 src="https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrNquEC3m4Ed9yabGUxplmsqHrS6gF3CifNY8e"
                 alt="UPLIFT team collaboration" 
@@ -144,8 +144,9 @@ const AboutPage: React.FC = () => {
         title="Our Leadership Team"
         subtitle="Meet the experts who drive our vision forward and ensure exceptional service delivery."
         centered
+        maxWidth="max-w-5xl"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center">
           {team.map((member, index) => (
             <motion.div 
               key={index}
@@ -153,17 +154,17 @@ const AboutPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
+              className="text-center flex flex-col items-center max-w-sm"
             >
-              <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 relative">
+              <div className="w-56 h-56 rounded-full overflow-hidden mx-auto mb-8 relative shadow-[0_0_20px_rgba(155,29,255,0.3)]">
                 <img 
                   src={member.image}
                   alt={member.name} 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-medium mb-1">{member.name}</h3>
-              <p className="text-electric-violet mb-3">{member.position}</p>
+              <h3 className="text-2xl font-medium mb-2">{member.name}</h3>
+              <p className="text-electric-violet mb-4 text-lg">{member.position}</p>
               <p className="text-white/70 max-w-xs mx-auto">
                 {member.description}
               </p>
