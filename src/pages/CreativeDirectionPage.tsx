@@ -1,37 +1,79 @@
 import React, { useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { ExternalLink, ArrowRight } from 'lucide-react';
+import Button from '../components/ui/Button';
 
-const CreativeDirectionPage: React.FC = () => {
-  // Redirect to external portfolio site
+interface CreativeDirectionPageProps {}
+
+const CreativeDirectionPage: React.FC<CreativeDirectionPageProps> = () => {
+  // Record analytics event when page loads
   useEffect(() => {
-    // Record analytics event if needed before redirect
+    if (window.gtag) {
+      window.gtag('event', 'portfolio_view', {
+        'event_category': 'portfolio',
+        'event_label': 'Creative Direction Portfolio View',
+      });
+    }
+  }, []);
+  
+  const handleRedirect = () => {
+    // Record click event
     if (window.gtag) {
       window.gtag('event', 'portfolio_redirect', {
         'event_category': 'outbound',
-        'event_label': 'Creative Direction Portfolio',
+        'event_label': 'Creative Direction Portfolio Redirect',
       });
     }
     
-    // Redirect to external site after a brief delay
-    const timer = setTimeout(() => {
-      window.location.href = 'https://shnwzrf.com/';
-    }, 100);
-    
-    return () => clearTimeout(timer);
-  }, []);
+    // Open in new tab
+    window.open('https://shnwzrf.com/', '_blank', 'noopener,noreferrer');
+  };
 
-  // Return a loading state or redirect component
   return (
     <div className="min-h-screen flex items-center justify-center gradient-bg">
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-electric-violet/20 rounded-full filter blur-[100px] animate-glow"></div>
-      <div className="glass-card p-8 md:p-12 text-center max-w-md relative z-10">
+      
+      <motion.div 
+        className="glass-card p-8 md:p-12 text-center max-w-xl relative z-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1 className="text-3xl font-semibold mb-4">
-          <span className="gradient-text">Redirecting</span>
+          <span className="gradient-text">Creative Direction</span>
         </h1>
-        <p className="text-xl text-white/80 mb-6">
-          Please wait while we redirect you to our Creative Direction portfolio...
+        
+        <p className="text-xl text-white/80 mb-8">
+          Our Creative Direction portfolio showcases our brand strategy and design work. 
+          It's available on a separate specialized website.
         </p>
-        <div className="w-12 h-12 rounded-full border-4 border-neutral-700 border-t-electric-violet animate-spin mx-auto"></div>
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button 
+            variant="primary"
+            size="lg"
+            className="group"
+            onClick={handleRedirect}
+          >
+            <ExternalLink size={18} className="mr-2" />
+            View Portfolio
+            <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
+          
+          <Link to="/case-studies">
+            <Button
+              variant="outline"
+              size="lg"
+            >
+              View Case Studies
+            </Button>
+          </Link>
+        </div>
+        
+        <p className="mt-6 text-sm text-white/60">
+          Note: Clicking "View Portfolio" will take you to our external portfolio site at shnwzrf.com
+        </p>
       </div>
     </div>
   );
