@@ -72,7 +72,7 @@ const ServiceDetailPage: React.FC = () => {
           description: 'Continuous performance monitoring and process refinement to maximize results and ROI.'
         }
       ],
-      imageSrc: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imageSrc: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrOwsfWsPtf5tLxrJBKGIUXpzSWP3AO9Qwhg1N'
     },
     'logistics': {
       title: 'Logistics',
@@ -123,7 +123,7 @@ const ServiceDetailPage: React.FC = () => {
           description: 'Ongoing analysis and optimization of processes to achieve greater efficiency and cost savings.'
         }
       ],
-      imageSrc: 'https://images.pexels.com/photos/7706434/pexels-photo-7706434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imageSrc: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr7Adl4MJoqhwKnVTQZaEAGCsP4eUcDWl2dOm1'
     },
     'collections': {
       title: 'Collections',
@@ -174,7 +174,7 @@ const ServiceDetailPage: React.FC = () => {
           description: 'Regular performance reviews and strategy adjustments to maximize recovery rates.'
         }
       ],
-      imageSrc: 'https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      imageSrc: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrkd1LlTf7QUG3gos5DHvRIOeTxSVCiYqEJwZA'
     },
     'marketing': {
       title: 'Marketing',
