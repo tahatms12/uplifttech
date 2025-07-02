@@ -5,6 +5,7 @@ import Section from '../components/ui/Section';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import MetaTags from '../components/seo/MetaTags';
+import StructuredData from '../components/seo/StructuredData';
 
 interface CaseStudy {
   id: number;
