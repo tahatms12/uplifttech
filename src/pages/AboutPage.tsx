@@ -37,25 +37,19 @@ const AboutPage: React.FC = () => {
       name: 'Taha Syed',
       position: 'Founder & CEO',
       description: 'Visionary leader with years of experience in software development, supply chain management, data management, compliance implementation and software implementation.',
-      image: 'https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg'
-    },
-    {
-      name: 'Mujtaba Sarwar',
-      position: 'COO',
-      description: 'Years of experience in operations management and sales, striving for operational excellence and driving business growth.',
-      image: 'https://images.pexels.com/photos/5792641/pexels-photo-5792641.jpeg'
+      image: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr1W4jrtKKpXVWvs9SzonqPt04iFJaeUgRD85u'
     },
     {
       name: 'Zoe Turner',
       position: 'Operations Manager',
       description: 'Brings meticulous teaching capabilities and ensures everything is working according to plan, maintaining high operational standards.',
-      image: 'https://images.pexels.com/photos/1586996/pexels-photo-1586996.jpeg'
+      image: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrYEgoyjVvGagiQPkZIS78eT2lbXDK1sjz5c3t'
     },
     {
       name: 'Shahnawaz Arif',
       position: 'CMO',
       description: 'Years of experience in creating brand strategies, working with household brand names to enhance their market presence and recognition.',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg'
+      image: 'https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrXoeIcaqcIpZMfK5wFztkhqWygG7oCTbeinJD'
     }
   ];
 
@@ -117,7 +111,7 @@ const AboutPage: React.FC = () => {
           >
             <div className="relative aspect-video rounded-xl overflow-hidden">
               <img 
-                src="https://24vzlu2kzs.ufs.sh/f/4JlBnp1v6U48IhdPj7Nlaef7gyzid6OhrCHJxbUWpK93SsGw"
+                src="https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrNquEC3m4Ed9yabGUxplmsqHrS6gF3CifNY8e"
                 alt="UPLIFT team collaboration" 
                 className="w-full h-full object-cover"
               />
