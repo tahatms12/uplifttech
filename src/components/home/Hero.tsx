@@ -91,10 +91,10 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <div className="relative w-full max-w-xs sm:max-w-md mx-auto">
+              <div className="relative w-full max-w-xs sm:max-w-md mx-auto">
               <div className="absolute inset-0 aspect-[1/1] w-full bg-[radial-gradient(ellipse_at_center,#9B1DFF_0%,#280059_60%,transparent_70%)] blur-[80px]" />
               {/* Adjust positioning to prevent overlap on mobile */}
-              <div className="absolute -bottom-16 sm:-bottom-6 right-0 sm:-right-6 bg-rich-black p-3 sm:p-4 rounded-xl border border-neutral-800 z-20">
+              <div className="absolute -bottom-24 sm:-bottom-6 right-0 sm:-right-6 bg-rich-black p-3 sm:p-4 rounded-xl border border-neutral-800 z-20">
                 <p className="text-2xl sm:text-3xl font-display font-semibold text-electric-violet">24/7</p>
                 <p className="text-xs sm:text-sm text-white/70">Global Operations</p>
               </div>
