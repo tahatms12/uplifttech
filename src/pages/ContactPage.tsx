@@ -84,7 +84,7 @@ const ContactPage: React.FC = () => {
             <div className="glass-card p-8 h-full">
               <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
               
-              <div className="space-y-8">
+              <div className="space-y-6 sm:space-y-8">
                 <div>
                   <h3 className="text-lg font-medium mb-4">Reach Us Directly</h3>
                   <ul className="space-y-4">
@@ -134,8 +134,8 @@ const ContactPage: React.FC = () => {
                   <h3 className="text-lg font-medium mb-4">Frequently Asked Questions</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-medium text-electric-violet">How quickly can you start working with us?</h4>
-                      <p className="text-white/80 mt-1">
+                      <h4 className="font-medium text-electric-violet text-sm sm:text-base">How quickly can you start working with us?</h4>
+                      <p className="text-white/80 mt-1 text-sm sm:text-base">
                         Typically, we can begin within 1-2 weeks of finalizing our agreement, depending on the complexity of your needs.
                       </p>
                     </div>
@@ -168,11 +168,11 @@ const ContactPage: React.FC = () => {
           </p>
         </div>
         
-        <div className="relative rounded-xl overflow-hidden h-[400px]">
+        <div className="relative rounded-lg sm:rounded-xl overflow-hidden h-[250px] sm:h-[350px] md:h-[400px]">
           <div className="absolute inset-0 bg-neutral-900/50 z-10 flex items-center justify-center">
-            <div className="glass-card p-8 max-w-md text-center">
+            <div className="glass-card p-4 sm:p-6 md:p-8 max-w-xs sm:max-w-sm md:max-w-md text-center mx-4">
               <h3 className="text-2xl font-medium mb-4">Ready to Get Started?</h3>
-              <p className="text-white/80 mb-6">
+              <p className="text-white/80 text-sm sm:text-base mb-4 sm:mb-6">
                 Book a consultation today and discover how our services can transform your operations.
               </p>
             </div>
