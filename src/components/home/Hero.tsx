@@ -46,6 +46,7 @@ const Hero: React.FC = () => {
                     }
                   }
                 }
+                }
             >
               <motion.div 
                 variants={fadeUpVariants}
