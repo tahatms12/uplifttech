@@ -102,7 +102,7 @@ const CaseStudiesPage: React.FC = () => {
         "73% of routine scheduling handled automatically",
         "50% reduction in staff time spent on repetitive communication tasks"
       ],
-      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrYamlY1VvGagiQPkZIS78eT2lbXDK1sjz5c3t",
+      imageSrc: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       testimonial: {
         quote: "The AI integration UPLIFT implemented has been transformative. Our customers receive immediate responses at any hour, and our team can focus on complex interactions that truly require the human touch.",
         author: "James Chen",
@@ -123,7 +123,7 @@ const CaseStudiesPage: React.FC = () => {
         "35% higher conversion rate than previous internal efforts",
         "Successful entry into 3 new vertical markets"
       ],
-      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr8Hyh7FSpA1R97OPT6CrtFKfNDeZcxaImnYuB"
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrYamlY1VvGagiQPkZIS78eT2lbXDK1sjz5c3t"
     },
     {
       id: 6,
@@ -138,7 +138,7 @@ const CaseStudiesPage: React.FC = () => {
         "On-time delivery improved from 79% to 97%",
         "Order processing time reduced by 40%"
       ],
-      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr29eCfrOIXq0JBeTNSsrEFDjm8bYxAHK13tzV"
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr8Hyh7FSpA1R97OPT6CrtFKfNDeZcxaImnYuB"
     },
     {
       id: 7,
@@ -225,7 +225,7 @@ const CaseStudiesPage: React.FC = () => {
         image="https://24vzlu2kzs.ufs.sh/f/4JlBnp1v6U48gUJycDW4KQobNdljuvhf3x8ZICL0FDiO2aUY"
         type="article"
       />
-      <StructuredData data={caseStudiesSchema} />
+      {caseStudiesSchema && <StructuredData data={caseStudiesSchema} />}
       
       {/* Hero Section */}
       <div className="pt-32 pb-20 gradient-bg relative overflow-hidden">
