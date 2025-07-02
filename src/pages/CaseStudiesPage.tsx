@@ -153,7 +153,7 @@ const CaseStudiesPage: React.FC = () => {
         "Marketing campaign engagement up 83%",
         "Successfully entered 2 new market segments"
       ],
-      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhrOwsfWsPtf5tLxrJBKGIUXpzSWP3AO9Qwhg1N",
+      imageSrc: "https://cplyjoeqd4.ufs.sh/f/gAmqiT9pUNhr29eCfrOIXq0JBeTNSsrEFDjm8bYxAHK13tzV",
       testimonial: {
         quote: "The creative direction and brand strategy provided by Uplift Technologies transformed how our market perceives us. We've seen immediate impact in both lead quality and customer engagement.",
         author: "Sarah Chen",
