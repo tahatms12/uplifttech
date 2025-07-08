@@ -65,7 +65,7 @@ export default defineConfig({
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
           'framer-motion': ['framer-motion'],
           'ui-components': ['@headlessui/react', 'lucide-react'],
-          'email-calendar': ['@emailjs/browser', '@calcom/embed-react']
+          'email-calendar': ['@calcom/embed-react']
         },
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
